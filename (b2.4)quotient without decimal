@@ -1,0 +1,12 @@
+# Ask user to input two numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Check if the divisor is zero
+if num2 == 0:
+    print("Division by zero is not allowed")
+else:
+    # Perform division and remove decimal part
+    quotient = num1 // num2   # Floor division removes the decimal part
+    
+    print("The quotient without the decimal point is:", quotient)

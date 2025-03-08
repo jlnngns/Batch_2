@@ -1,0 +1,12 @@
+# Ask the user to input two numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Determine the start and end points
+start = min(num1, num2)  # Get the smaller number
+end = max(num1, num2)  # Get the larger number
+
+# Print numbers between the two numbers
+print(f"Numbers between {num1} and {num2}:")
+for num in range(start + 1, end):  # Exclude the input numbers themselves
+    print(num)
